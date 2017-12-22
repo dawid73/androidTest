@@ -1,5 +1,6 @@
 package com.example.dhonkisz.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -97,5 +98,10 @@ public class Main3Activity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void przeskocz(MenuItem item) {
+        Intent intent = new Intent(Main3Activity.this, PierwszeActivity.class);
+        startActivity(intent);
     }
 }

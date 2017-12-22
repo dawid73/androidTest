@@ -29,4 +29,10 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="camera">kamerka</string>
+    <string name="zapisz">zapisz plik</string>
+    <string name="wyswietl">Wyswietl pliki</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="tupojawisietekxt">Tu sie cos pojawi</string>
 </resources>

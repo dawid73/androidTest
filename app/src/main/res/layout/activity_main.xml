@@ -44,6 +44,8 @@
             android:layout_below="@+id/przycisk2"
             android:text="@string/logowanie" />
 
+
+
         <Button
             android:id="@+id/zapisz"
             android:layout_width="match_parent"
@@ -52,7 +54,19 @@
             android:layout_alignLeft="@+id/logowanie"
             android:layout_alignStart="@+id/logowanie"
             android:layout_below="@+id/logowanie"
-            android:text="@string/logowanie" />
+            android:text="@string/zapisz" />
+
+        <Button
+            android:id="@+id/wyswietl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="wyswietlClick"
+            android:layout_alignLeft="@+id/zapisz"
+            android:layout_alignStart="@+id/zapisz"
+            android:layout_below="@+id/zapisz"
+            android:text="@string/wyswietl" />
+
+
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

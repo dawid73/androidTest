@@ -187,4 +187,16 @@ public class MainActivity extends Activity implements CommonColors {
         }
 
     }
+
+    public void wyswietlClick(View view) {
+        switch (view.getId()){
+            case R.id.wyswietl:
+                intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
+                break;
+            default:
+                break;
+    }
+    }
+
 }
