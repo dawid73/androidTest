@@ -194,9 +194,15 @@ public class MainActivity extends Activity implements CommonColors {
                 intent = new Intent(MainActivity.this, ListActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.odliczanie:
+                intent = new Intent(MainActivity.this, CountDownActivity.class);
+                startActivity(intent);
+                break;
             default:
                 break;
     }
     }
 
+    public void odliczanie(View view) {
+    }
 }

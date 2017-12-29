@@ -66,6 +66,17 @@
             android:layout_below="@+id/zapisz"
             android:text="@string/wyswietl" />
 
+        <Button
+            android:id="@+id/odliczanie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="wyswietlClick"
+            android:layout_alignLeft="@+id/wyswietl"
+            android:layout_alignStart="@+id/wyswietl"
+            android:layout_below="@+id/wyswietl"
+            android:text="@string/odliczanie" />
+
+
 
 
     </RelativeLayout>

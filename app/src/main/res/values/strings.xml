@@ -35,4 +35,8 @@
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="tupojawisietekxt">Tu sie cos pojawi</string>
+    <string name="odliczanie">Odliczanie</string>
+    <string name="buttonStartCount">Zacznij odliczanie</string>
+    <string name="hind_podpowiedz">Wpisz tutaj tytuł powiadomienia</string>
+    <string name="hind_powiadomienie">Tresc powiadomienia</string>
 </resources>
