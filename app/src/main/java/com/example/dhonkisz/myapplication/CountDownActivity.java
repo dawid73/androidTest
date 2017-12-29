@@ -1,6 +1,7 @@
 package com.example.dhonkisz.myapplication;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.os.Build;
@@ -8,13 +9,20 @@ import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.ClientCertRequest;
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class CountDownActivity extends AppCompatActivity {
 
     EditText message, title, seconds;
     Button btn;
+    private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +33,20 @@ public class CountDownActivity extends AppCompatActivity {
         seconds = (EditText) findViewById(R.id.editTextSeconds);
 
         btn = (Button) findViewById(R.id.btnStartCount);
+
+        webView = new WebView(this);
+        webView.getSettings().setJavaScriptEnabled(true);
+        final Activity activity = this;
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                super.onReceivedError(view, errorCode, description, failingUrl);
+                Toast.makeText(activity, description, Toast.LENGTH_LONG).show();
+            }
+
+        });
+        webView.loadUrl("http://www.google.pl");
+        setContentView(webView);
     }
 
     public void zacznijOdliczanie(View view) {
